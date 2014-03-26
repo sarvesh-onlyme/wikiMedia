@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" id="theme"
+  href="VizGrimoireJS/vizgrimoire2.css" />
+<link href="VizGrimoireJS/bootstrap/css/bootstrap.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="custom.css" />
+<link href="VizGrimoireJS/bootstrap/css/bootstrap-responsive.css"
+  rel="stylesheet">
+<link rel="shortcut icon" href="favicon.png">
+<link rel="stylesheet" href="VizGrimoireJS/awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+  <div id="Navbar"></div>
+  <div class="container-fluid">
+    <div class="row-fluid">
+      Contributors of code merged to <a
+        href="https://wikitech.wikimedia.org/wiki/Key_Wikimedia_software_projects">key
+        Wikimedia software projects</a> through <a
+        href="https://gerrit.wikimedia.org/">Gerrit</a>.
+    </div>
+    <div id="contribs" class="row-fluid">
+      <div class="span4">
+        <h4>People All-time</h4>
+        <div class="Contribs" data-type="people"></div>
+      </div>
+      <div class="span4">
+        <h4>People 2014 Q1</h4>
+        <div class="Contribs" data-quarter="2014 1" data-type="people"></div>
+        <h4>People 2013 Q4</h4>
+        <div class="Contribs" data-quarter="2013 4" data-type="people"></div>
+        <h4>People 2013 Q3</h4>
+        <div class="Contribs" data-quarter="2013 3" data-type="people"></div>
+      </div>
+
+      <div class="span4">
+        <h3>Organizations</h3>
+        <h4>All time</h4>
+        <div class="Contribs" data-type="companies" data-show_links="true"></div>
+        <h4>2014 Q1</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2014 1"></div>
+        <h4>2013 Q4</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2013 4"></div>
+        <h4>2013 Q3</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2013 3"></div>
+        <h4>2013 Q2</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2013 2"></div>
+        <h4>2013 Q1</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2013 1"></div>
+        <h4>2012 Q4</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2012 4"></div>
+        <h4>2012 Q3</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2012 3"></div>
+        <h4>2012 Q2</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2012 2"></div>
+        <h4>2012 Q1</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2012 1"></div>
+        <h4>2011 Q4</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2011 4"></div>
+        <h4>2011 Q3</h4>
+        <div class="Contribs" data-type="companies" data-search="false"
+          data-show_links="true" data-quarter="2011 3"></div>
+      </div>
+    </div>
+    <Footer>
+      <div id="Footer"></div>
+    </Footer>
+  </div>
+  <script type="text/javascript" src="VizGrimoireJS/lib/jquery-1.7.1.min.js"></script>
+  <script type="text/javascript" src="VizGrimoireJS/bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="VizGrimoireJS/vizgrimoire.min.js"></script>
+  <script type="text/javascript" src="js/mediawiki.js"></script>
+</body>
+</html>
