@@ -28,6 +28,7 @@ var Mediawiki = {};
 
     var contribs_people = null, contribs_people_quarters = null;
     var contribs_companies = null, contribs_companies_quarters = null;
+    var contribs_permit = null, contribs_permit_quarters = null;
     var new_people = null, new_people_activity = null, people_leaving = null;
     var gone_people = null;
     var people_intake = null, people_top_all = null;
@@ -122,9 +123,16 @@ var Mediawiki = {};
                table += "<a href='people.html?id="+id+"&name="+name+"'>";
            if (type === "companies" && show_links)
                table += "<a href='company.html?company="+name+"'>";
+           if (type === "permit" && show_links)
+               table += "<a href='people.html?id="+id+"&name="+name+"'>";
            table += name;
            if (show_links) table += "</a>";
            table += "</td><td>"+total;
+           if (type === "permit") {
+                table += "</td><td>"+contribs_data.changed_by[i];
+                table += "</td><td>"+contribs_data.company_id[i];
+                table += "</td><td>"+contribs_data.company_name[i];
+           }
            table += "</td></tr>";
         }
         table += "</table>";
